@@ -50,5 +50,5 @@ By contributing, you agree that your contributions are licensed under the **Apac
 
 ## 📬 Questions?
 
-Open an issue or contact the maintainers through the Information Network Website.
+Open an issue or contact the maintainers through Information Network Website.
 
