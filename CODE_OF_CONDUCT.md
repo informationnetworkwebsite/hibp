@@ -38,7 +38,7 @@ Project maintainers may:
 
 ## 📬 Reporting Issues
 
-To report violations, please contact the maintainers via the Information Network Website.
+To report violations, please contact the maintainers via Information Network Website.
 
 All reports will be handled confidentially.
 
