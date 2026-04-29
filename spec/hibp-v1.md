@@ -18,7 +18,7 @@ Registries may expand without requiring a new protocol version.
 1. [Introduction](#1-introduction)  
 2. [Design Goals](#2-design-goals)  
 3. [Terminology](#3-terminology)  
-4. [HIBP‑v1 Core Message Format](#4-hibp-v1-core-message-format)  
+4. [HIBP-v1 Core Message Format](#4-hibp-v1-core-message-format)  
    - [Field Layout](#41-field-layout-fixed-order)  
    - [Version Field](#42-version-field)  
    - [TTL Behavior](#43-ttl-behavior)  
@@ -80,7 +80,7 @@ HIBP‑v1 is designed to be:
 
 ---
 
-## 4. HIBP‑v1 Core Message Format
+## 4. HIBP-v1 Core Message Format
 
 HIBP‑v1 defines a compact, fixed‑length **21‑byte** binary frame suitable for BLE advertisements and other constrained transports.
 
