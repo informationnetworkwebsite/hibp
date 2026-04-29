@@ -136,6 +136,8 @@ Extended metadata MAY be transmitted using JSON over IP, BLE GATT, or other tran
 
 Receivers MUST associate extended payloads with core frames using the ephemeral_id.
 
+---
+
 ## 6. HIBP‑v1 Intent Code Registry
 HIBP uses a 1‑byte intent code (0x00–0xFF).
 Codes are grouped by functional domain.
@@ -215,6 +217,8 @@ Reserved: 0x75–0x7F
 
 0xF0–0xFF — Internal reserved
 
+---
+
 ## 7. Device Type Registry
 
 | Code | Name |
@@ -226,6 +230,8 @@ Reserved: 0x75–0x7F
 | ``0x20`` | BEACON_ONLY |
 
 Reserved: 0x21–0xFF
+
+---
 
 ## 8. Security & Privacy Model
 
@@ -265,6 +271,8 @@ MUST be truncated to 8 bytes
 
 MAY be verified locally or via backend
 
+---
+
 ## 9. Transport Layer Requirements
 
 ### 9.1 BLE Advertisements
@@ -291,6 +299,8 @@ WebRTC
 
 Mesh networks
 
+---
+
 ## 10. Reference Implementation
 
 HIBP‑v1 includes:
@@ -303,6 +313,8 @@ SDKs (JavaScript, Python)
 
 Reference implementations MUST follow this specification.
 
+---
+
 ## 11. Versioning
 
 HIBP‑v1 uses version = 0x01
@@ -310,6 +322,8 @@ HIBP‑v1 uses version = 0x01
 Future versions MUST increment the version byte
 
 Receivers MUST ignore unknown versions
+
+---
 
 ## 12. Registry Governance
 
@@ -331,6 +345,8 @@ justification
 
 proposed code range
 
+---
+
 ## 13. Acknowledgments
 
 HIBP is part of the broader Information Network Website ecosystem, including:
@@ -340,6 +356,8 @@ shOPtions (Hyperlocal Commerce Engine)
 Neighborhood Compute Nodes
 
 Ambient hyperlocal intelligence systems
+
+---
 
 ## 14. License
 
