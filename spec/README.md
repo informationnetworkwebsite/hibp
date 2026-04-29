@@ -23,7 +23,7 @@ The first public version of the protocol.
 - Optional metadata extensions  
 
 📄 **Specification:**  
-[`/spec/hibp-v1.md`](spec/hibp-v1.md)
+[`/spec/hibp-v1.md`](hibp-v1.md)
 
 ---
 
