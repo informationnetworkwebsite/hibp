@@ -153,6 +153,7 @@ Extended metadata MAY be transmitted using JSON over IP, BLE GATT, or other tran
   }
 }
 ```
+````
 
 Receivers MUST associate extended payloads with core frames using the `ephemeral_id`.
 
