@@ -12,7 +12,7 @@ The registry is intentionally minimal in HIBP‑v1 and is designed to expand as 
 ## Table of Contents
 1. [Overview](#overview)  
 2. [Registry Structure](#registry-structure)  
-3. [Device Types (0x01–0x20)](#device-types-0x010x20)  
+3. [Device Types (0x01–0x20)](#device-types-0x01-0x20)  
 4. [Reserved Ranges](#reserved-ranges)  
 5. [Requesting New Device Types](#requesting-new-device-types)  
 6. [Version History](#version-history)
