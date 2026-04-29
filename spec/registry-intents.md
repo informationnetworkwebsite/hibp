@@ -55,7 +55,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 ---
 
-## Commerce (0x01–0x1F)
+## Commerce (0x01-0x1F)
 
 | Code | Name | Description |
 |------|------|-------------|
