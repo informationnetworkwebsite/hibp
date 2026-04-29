@@ -25,7 +25,7 @@ Registries may expand without requiring a new protocol version.
    - [Ephemeral ID](#44-ephemeral-id)  
    - [Signature Fragment](#45-signature-fragment)  
 5. [Extended Payload Format (Optional)](#5-extended-payload-format-optional)  
-6. [HIBP‑v1 Intent Code Registry](#6-hibp-v1-intent-code-registry)  
+6. [HIBP-v1 Intent Code Registry](#6-hibp-v1-intent-code-registry)  
 7. [Device Type Registry](#7-device-type-registry)  
 8. [Security & Privacy Model](#8-security--privacy-model)  
 9. [Transport Layer Requirements](#9-transport-layer-requirements)  
@@ -157,7 +157,7 @@ Receivers MUST associate extended payloads with core frames using the `ephemeral
 
 ---
 
-## 6. HIBP‑v1 Intent Code Registry
+## 6. HIBP-v1 Intent Code Registry
 
 HIBP uses a 1‑byte intent code (`0x00–0xFF`).  
 Codes are grouped by functional domain.
