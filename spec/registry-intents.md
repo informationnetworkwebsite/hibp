@@ -65,26 +65,39 @@ Codes are grouped by domain to ensure long‑term scalability.
 | `0x04` | LOOKING_TO_BUY | User seeking a specific item |
 | `0x05` | SERVICE_AVAILABLE | User offering a service |
 | `0x06` | SERVICE_REQUEST | User requesting a service |
-| `0x07` | RENTAL_AVAILABLE | Item or property available for rent |
-| `0x08` | RENTAL_WANTED | User seeking a rental |
-| `0x09` | SHOPTIONS | shOPtions‑specific commerce intent (reserved for ecosystem use) |
+| `0x09` | SHOPTIONS | shOPtions‑specific commerce intent |
 
-**Reserved for future commerce expansion:** `0x10–0x1F`
+**Reserved:** `0x0A–0x1F`
 
 ---
 
-## Community & Social (0x20-0x3F)
+## Community & Social (0x20-0x2F)
 
 | Code | Name | Description |
 |------|------|-------------|
 | `0x20` | EVENT | Public event, gathering, or meeting |
 | `0x21` | POPUP | Temporary booth, vendor, or pop‑up |
-| `0x22` | ALERT | Non‑emergency alert (noise, traffic, etc.) |
-| `0x23` | REQUEST_HELP | User needs assistance (non‑emergency) |
+| `0x22` | ALERT | Non‑emergency alert |
+| `0x23` | REQUEST_HELP | User needs assistance |
 | `0x24` | OFFER_HELP | User offering assistance |
 | `0x25` | COMMUNITY_ANNOUNCEMENT | General neighborhood broadcast |
 
-**Reserved for future community expansion:** `0x30–0x3F`
+**Reserved:** `0x26–0x2F`
+
+---
+
+## Real Estate (0x30-0x3F)
+
+| Code | Name | Description |
+|------|------|-------------|
+| `0x30` | RENTAL_AVAILABLE | Apartment/home available for rent |
+| `0x31` | RENTAL_WANTED | User seeking a rental |
+| `0x32` | ROOM_AVAILABLE | Room available for rent |
+| `0x33` | ROOM_WANTED | User seeking a room |
+| `0x34` | SUBLET_AVAILABLE | Sublet available |
+| `0x35` | SUBLET_WANTED | User seeking a sublet |
+
+**Reserved:** `0x36–0x3F`
 
 ---
 
@@ -98,7 +111,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 | `0x43` | FOUND_PET | Found dog, cat, or other pet |
 | `0x44` | LOST_DEVICE | Lost phone, laptop, or other device |
 
-**Reserved for future lost/found expansion:** `0x45–0x4F`
+**Reserved:** `0x45–0x4F`
 
 ---
 
@@ -106,14 +119,14 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 | Code | Name | Description |
 |------|------|-------------|
-| `0x50` | NOISE_EVENT | Loud noise, construction, or disturbance |
+| `0x50` | NOISE_EVENT | Loud noise or disturbance |
 | `0x51` | TRAFFIC_EVENT | Local traffic congestion |
 | `0x52` | WEATHER_EVENT | Hyperlocal weather anomaly |
 | `0x53` | POWER_OUTAGE | Localized power outage |
 | `0x54` | WATER_OUTAGE | Localized water disruption |
 | `0x55` | NETWORK_OUTAGE | Localized internet outage |
 
-**Reserved for future ambient expansion:** `0x60–0x6F`
+**Reserved:** `0x60–0x6F`
 
 ---
 
@@ -127,7 +140,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 | `0x73` | NODE_RELAY_AVAILABLE | Node can relay HIBP packets |
 | `0x74` | NODE_SYNC | Sync request/response |
 
-**Reserved for future infrastructure expansion:** `0x75–0x7F`
+**Reserved:** `0x75–0x7F`
 
 ---
 
