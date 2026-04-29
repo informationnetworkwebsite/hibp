@@ -162,26 +162,26 @@ Receivers MUST associate extended payloads with core frames using the `ephemeral
 HIBP uses a 1‑byte intent code (`0x00–0xFF`).  
 Codes are grouped by functional domain.
 
-### 6.1 Commerce (0x01–0x1F)
+### 6.1 Commerce (0x01-0x1F)
 
 | Code | Name |
-| --- | --- |
+|------|------|
 | `0x01` | FOR_SALE |
 | `0x02` | FREE |
 | `0x03` | TRADE |
 | `0x04` | LOOKING_TO_BUY |
 | `0x05` | SERVICE_AVAILABLE |
 | `0x06` | SERVICE_REQUEST |
-| `0x07` | RENTAL_AVAILABLE |
-| `0x08` | RENTAL_WANTED |
 | `0x09` | SHOPTIONS |
 
-Reserved: `0x10–0x1F`
+Reserved: `0x0A–0x1F`
 
-### 6.2 Community & Social (0x20–0x3F)
+---
+
+### 6.2 Community & Social (0x20-0x2F)
 
 | Code | Name |
-| --- | --- |
+|------|------|
 | `0x20` | EVENT |
 | `0x21` | POPUP |
 | `0x22` | ALERT |
@@ -189,12 +189,29 @@ Reserved: `0x10–0x1F`
 | `0x24` | OFFER_HELP |
 | `0x25` | COMMUNITY_ANNOUNCEMENT |
 
-Reserved: `0x30–0x3F`
+Reserved: `0x26–0x2F`
 
-### 6.3 Lost & Found (0x40–0x4F)
+---
+
+### 6.3 Real Estate (0x30-0x3F)
 
 | Code | Name |
-| --- | --- |
+|------|------|
+| `0x30` | RENTAL_AVAILABLE |
+| `0x31` | RENTAL_WANTED |
+| `0x32` | ROOM_AVAILABLE |
+| `0x33` | ROOM_WANTED |
+| `0x34` | SUBLET_AVAILABLE |
+| `0x35` | SUBLET_WANTED |
+
+Reserved: `0x36–0x3F`
+
+---
+
+### 6.4 Lost & Found (0x40-0x4F)
+
+| Code | Name |
+|------|------|
 | `0x40` | LOST_ITEM |
 | `0x41` | FOUND_ITEM |
 | `0x42` | LOST_PET |
@@ -203,10 +220,12 @@ Reserved: `0x30–0x3F`
 
 Reserved: `0x45–0x4F`
 
-### 6.4 Environmental & Ambient (0x50–0x6F)
+---
+
+### 6.5 Environmental & Ambient (0x50-0x6F)
 
 | Code | Name |
-| --- | --- |
+|------|------|
 | `0x50` | NOISE_EVENT |
 | `0x51` | TRAFFIC_EVENT |
 | `0x52` | WEATHER_EVENT |
@@ -216,10 +235,12 @@ Reserved: `0x45–0x4F`
 
 Reserved: `0x60–0x6F`
 
-### 6.5 Infrastructure & System (0x70–0x7F)
+---
+
+### 6.6 Infrastructure & System (0x70-0x7F)
 
 | Code | Name |
-| --- | --- |
+|------|------|
 | `0x70` | NODE_BEACON |
 | `0x71` | NODE_STATUS |
 | `0x72` | NODE_CAPABILITY |
@@ -228,7 +249,9 @@ Reserved: `0x60–0x6F`
 
 Reserved: `0x75–0x7F`
 
-### 6.6 Reserved Ranges
+---
+
+### 6.7 Reserved Ranges
 
 - `0x80–0xAF` — Vendor‑specific  
 - `0xB0–0xCF` — Experimental  
