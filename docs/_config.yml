@@ -1,3 +1,33 @@
 theme: minima
+
 title: "Hyperlocal Intent Broadcast Protocol (HIBP)"
 description: "Open standard for hyperlocal intent broadcasting."
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+url: "https://informationnetworkwebsite.github.io"
+baseurl: "/hibp"
+
+# Default front matter for all docs pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      title: ""
+      description: ""
+      permalink: ""
+
+# Exclude non-docs files from being rendered
+exclude:
+  - spec/
+  - LICENSE
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - README.md
+
