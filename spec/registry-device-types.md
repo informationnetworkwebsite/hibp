@@ -53,7 +53,7 @@ Codes are grouped into ranges to support long‑term scalability.
 
 ---
 
-## Device Types (0x01–0x20)
+## Device Types (0x01-0x20)
 
 | Code | Name | Description |
 |------|------|-------------|
