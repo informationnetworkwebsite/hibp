@@ -174,6 +174,7 @@ Codes are grouped by functional domain.
 | `0x06` | SERVICE_REQUEST |
 | `0x07` | RENTAL_AVAILABLE |
 | `0x08` | RENTAL_WANTED |
+| `0x09` | SHOPTIONS |
 
 Reserved: `0x10–0x1F`
 
