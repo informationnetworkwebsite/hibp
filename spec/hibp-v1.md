@@ -132,6 +132,7 @@ Receivers MUST discard signals after `ttl_seconds` has elapsed from the time of 
 
 Extended metadata MAY be transmitted using JSON over IP, BLE GATT, or other transports.
 
+````markdown
 ### 5.1 JSON Structure Example
 
 ```json
@@ -152,7 +153,6 @@ Extended metadata MAY be transmitted using JSON over IP, BLE GATT, or other tran
   }
 }
 ```
-
 
 Receivers MUST associate extended payloads with core frames using the `ephemeral_id`.
 
