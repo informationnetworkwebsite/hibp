@@ -1,12 +1,18 @@
-# Hyperlocal Intent Broadcast Protocol (HIBP)
+# Hyperlocal Intent Broadcast Protocol (HIBP) — Specification Directory
 
 ### Open Standard • Versioned Specification • Public Registries
 
 The **Hyperlocal Intent Broadcast Protocol (HIBP)** is an open, lightweight communication standard for broadcasting short‑range, privacy‑preserving intent signals using Bluetooth Low Energy (BLE), Wi‑Fi LAN multicast, and other local transports.
 
-HIBP enables devices to share hyperlocal human‑intent metadata—such as items for sale, lost items, free items, services, and local events—without accounts, logins, or centralized platforms.
+HIBP enables devices to share hyperlocal human‑intent metadata across five primary domains:
 
-This repository contains the **official versioned specifications**, **registries**, and **reference documentation** for HIBP.
+- **Commerce**  
+- **Community & Social**  
+- **Lost & Found**  
+- **Environmental & Ambient**  
+- **Infrastructure & System**
+
+This directory contains the **official versioned specifications**, **registries**, and **reference documentation** for HIBP‑v1.
 
 ---
 
@@ -16,29 +22,25 @@ This repository contains the **official versioned specifications**, **registries
 The first public version of the protocol.
 
 - 21‑byte core message format  
-- Intent Code Registry  
+- Domain‑based Intent Code Registry  
 - Device Type Registry  
 - Transport requirements (BLE, Wi‑Fi LAN)  
 - Security & privacy model  
 - Optional metadata extensions  
+- Reserved ranges for vendor‑specific and experimental use  
 
-📄 **Specification:**  
-[`/spec/hibp-v1.md`](hibp-v1.md)
+📄 **Full Specification:**  
+[`hibp-v1.md`](hibp-v1.md)
 
 ---
 
-## 📁 Repository Structure
+## 📁 Specification Structure
 
-hibp/
-│
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-│
-└── spec/
+```
+spec/
 ├── README.md
 ├── hibp-v1.md
+│
 ├── registry-intents.md
 ├── registry-device-types.md
 ├── registry-transports.md
@@ -48,24 +50,25 @@ hibp/
 ├── registry-events.md
 ├── registry-errors.md
 └── registry-roles.md
-
+```
 
 ---
 
-## 📚 Registries
+## 📚 Registries Overview
 
-HIBP maintains several open registries:
+HIBP maintains several open registries that define the protocol’s extensible components:
 
-- Intent Codes  
-- Device Types  
-- Transport Extensions  
-- Metadata Fields  
-- NCN Roles  
-- Events  
-- Error Codes  
-- Protocol Roles  
+- **Intent Codes** — 1‑byte codes describing the meaning of a broadcast  
+- **Device Types** — identifiers for broadcasting and receiving devices  
+- **Transport Extensions** — BLE, Wi‑Fi LAN, and future transport definitions  
+- **Metadata Fields** — optional structured metadata for extended use cases  
+- **Security Registry** — privacy, encryption, and trust‑model parameters  
+- **Node Registry** — NCN (Neighborhood Communication Node) roles and capabilities  
+- **Events Registry** — standardized event categories  
+- **Error Registry** — protocol‑level error codes  
+- **Roles Registry** — protocol roles for devices and nodes  
 
-All registries are versioned and defined in the `/spec/` directory.
+All registries are versioned and may expand without requiring a new protocol version.
 
 ---
 
@@ -75,6 +78,7 @@ All registries are versioned and defined in the `/spec/` directory.
 - Versions are strictly incremental (`v1`, `v2`, `v3`, …).  
 - Breaking changes require a major version increment.  
 - Registries may expand without requiring a new protocol version.  
+- Reserved ranges MUST NOT be used without explicit assignment.  
 
 ---
 
@@ -82,8 +86,8 @@ All registries are versioned and defined in the `/spec/` directory.
 
 HIBP is an open standard. Contributions are welcome.
 
-Please see:  
-[`CONTRIBUTING.md`](../CONTRIBUTING.md)
+See:  
+[`../CONTRIBUTING.md`](../CONTRIBUTING.md)
 
 ---
 
@@ -91,15 +95,23 @@ Please see:
 
 This project is licensed under the **Apache License 2.0**.  
 See:  
-[`LICENSE`](../LICENSE)
+[`../LICENSE`](../LICENSE)
 
 ---
 
 ## 🔗 Related Resources
 
-- Protocol Overview  
-- HIBP Definition Page  
-- HIBP Whitepaper  
-- HIBP SDKs (future)  
-- Information Network Website
+- **GitHub Repository**  
+  https://github.com/informationnetworkwebsite/hibp  
 
+- **Developer Documentation (GitHub Pages)**  
+  https://informationnetworkwebsite.github.io/hibp  
+
+- **HIBP Definition Page**  
+  https://www.informationnetworkwebsite.com/definition/hyperlocal-intent-broadcast-protocol/
+
+- **HIBP Whitepaper**  
+  https://www.informationnetworkwebsite.com/protocols/hyperlocal-intent-broadcast-protocol/whitepaper/
+
+- **Information Network Website**  
+  https://www.informationnetworkwebsite.com
