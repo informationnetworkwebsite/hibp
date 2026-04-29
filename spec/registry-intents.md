@@ -67,6 +67,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 | `0x06` | SERVICE_REQUEST | User requesting a service |
 | `0x07` | RENTAL_AVAILABLE | Item or property available for rent |
 | `0x08` | RENTAL_WANTED | User seeking a rental |
+| `0x09` | SHOPTIONS | shOPtions‑specific commerce intent (reserved for ecosystem use) |
 
 **Reserved for future commerce expansion:** `0x10–0x1F`
 
