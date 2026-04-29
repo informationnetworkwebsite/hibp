@@ -83,7 +83,7 @@ All registries are versioned and defined in the `/spec/` directory.
 HIBP is an open standard. Contributions are welcome.
 
 Please see:  
-[`CONTRIBUTING.md`](/CONTRIBUTING.md)
+[`CONTRIBUTING.md`](../CONTRIBUTING.md)
 
 ---
 
@@ -91,7 +91,7 @@ Please see:
 
 This project is licensed under the **Apache License 2.0**.  
 See:  
-[`LICENSE`](/LICENSE)
+[`LICENSE`](../LICENSE)
 
 ---
 
