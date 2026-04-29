@@ -13,13 +13,14 @@ The registry is grouped by functional domain and is designed to expand over time
 1. [Overview](#overview)  
 2. [Registry Structure](#registry-structure)  
 3. [Commerce (0x01–0x1F)](#commerce-0x01-0x1f)  
-4. [Community & Social (0x20–0x3F)](#community--social-0x20-0x3f)  
-5. [Lost & Found (0x40–0x4F)](#lost--found-0x40-0x4f)  
-6. [Environmental & Ambient (0x50–0x6F)](#environmental--ambient-0x50-0x6f)  
-7. [Infrastructure & System (0x70–0x7F)](#infrastructure--system-0x70-0x7f)  
-8. [Reserved Ranges](#reserved-ranges)  
-9. [Requesting New Codes](#requesting-new-codes)  
-10. [Version History](#version-history)
+4. [Community & Social (0x20–0x3F)](#community--social-0x20-0x3f)
+5. [Real Estate (0x30-0x3F)](#real-estate-social-0x20-0x3f)  
+6. [Lost & Found (0x40–0x4F)](#lost--found-0x40-0x4f)  
+7. [Environmental & Ambient (0x50–0x6F)](#environmental--ambient-0x50-0x6f)  
+8. [Infrastructure & System (0x70–0x7F)](#infrastructure--system-0x70-0x7f)  
+9. [Reserved Ranges](#reserved-ranges)  
+10. [Requesting New Codes](#requesting-new-codes)  
+11. [Version History](#version-history)
 
 ---
 
