@@ -73,7 +73,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 ---
 
-## Community & Social (0x20–0x3F)
+## Community & Social (0x20-0x3F)
 
 | Code | Name | Description |
 |------|------|-------------|
@@ -88,7 +88,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 ---
 
-## Lost & Found (0x40–0x4F)
+## Lost & Found (0x40-0x4F)
 
 | Code | Name | Description |
 |------|------|-------------|
@@ -102,7 +102,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 ---
 
-## Environmental & Ambient (0x50–0x6F)
+## Environmental & Ambient (0x50-0x6F)
 
 | Code | Name | Description |
 |------|------|-------------|
@@ -117,7 +117,7 @@ Codes are grouped by domain to ensure long‑term scalability.
 
 ---
 
-## Infrastructure & System (0x70–0x7F)
+## Infrastructure & System (0x70-0x7F)
 
 | Code | Name | Description |
 |------|------|-------------|
