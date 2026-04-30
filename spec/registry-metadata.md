@@ -17,11 +17,12 @@ Extended payloads are optional, transport‑agnostic, and MUST NOT contain ident
 4. [Standard Metadata Keys](#standard-metadata-keys)  
 5. [Commerce Metadata](#commerce-metadata)  
 6. [Community Metadata](#community-metadata)  
-7. [Lost & Found Metadata](#lost--found-metadata)  
-8. [Environmental Metadata](#environmental-metadata)  
-9. [Reserved Keys](#reserved-keys)  
-10. [Requesting New Metadata Keys](#requesting-new-metadata-keys)  
-11. [Version History](#version-history)
+7. [Real Estate Metadata](#real-estate-metadata)  
+8. [Lost & Found Metadata](#lost--found-metadata)  
+9. [Environmental Metadata](#environmental-metadata)  
+10. [Reserved Keys](#reserved-keys)  
+11. [Requesting New Metadata Keys](#requesting-new-metadata-keys)  
+12. [Version History](#version-history)
 
 ---
 
@@ -34,6 +35,7 @@ Extended payload metadata provides additional context for HIBP signals, such as:
 - condition  
 - category and tags  
 - event details  
+- rental/sublet information  
 - lost/found item information  
 
 Metadata keys are **standardized** to ensure interoperability across:
@@ -76,109 +78,144 @@ Example:
   "currency": "USD",
   "condition": "good"
 }
+```
 
-Standard Metadata Keys
+---
+
+## Standard Metadata Keys
 
 These keys apply across all intent categories.
 
 | Key | Type | Description |
 | --- | --- | --- |
-| ``title`` | string | Short human‑readable title |
-| ``description`` | string | Longer human‑readable description |
-| ``category`` | string | High‑level category (electronics, pets, tools, etc.) |
-| ``tags`` | array | User‑defined tags |
-| ``language`` | string | Optional language code (ISO‑639‑1) |
+| `title` | string | Short human‑readable title |
+| `description` | string | Longer human‑readable description |
+| `category` | string | High‑level category (electronics, pets, tools, etc.) |
+| `tags` | array | User‑defined tags |
+| `language` | string | Optional language code (ISO‑639‑1) |
 
-Commerce Metadata
+---
 
-These keys apply to commerce‑related intents (FOR_SALE, FREE, TRADE, etc.).
+## Commerce Metadata
+
+These keys apply to commerce‑related intents (`FOR_SALE`, `FREE`, `TRADE`, `LOOKING_TO_BUY`, etc.).
 
 | Key | Type | Description |
 | --- | --- | --- |
-| ``price`` | number | Numeric price value |
-| ``currency`` | string | ISO‑4217 currency code |
-| ``condition`` | string | Item condition (new, good, fair, poor) |
-| ``quantity`` | number | Quantity available |
-| ``brand`` | string | Optional brand name |
-| ``model`` | string | Optional model identifier |
+| `price` | number | Numeric price value |
+| `currency` | string | ISO‑4217 currency code |
+| `condition` | string | Item condition (new, good, fair, poor) |
+| `quantity` | number | Quantity available |
+| `brand` | string | Optional brand name |
+| `model` | string | Optional model identifier |
 
-Community Metadata
+---
+
+## Community Metadata
 
 These keys apply to events, pop‑ups, and community announcements.
 
 | Key | Type | Description |
 | --- | --- | --- |
-| ``event_start`` | string | ISO‑8601 start time |
-| ``event_end`` | string | ISO‑8601 end time |
-| ``event_type`` | string | Category of event (meetup, sale, workshop, etc.) |
-| ``venue`` | string | Human‑readable venue name |
-| ``host`` | string | Non‑identifying host label (e.g., “Community Garden Group”) |
+| `event_start` | string | ISO‑8601 start time |
+| `event_end` | string | ISO‑8601 end time |
+| `event_type` | string | Category of event (meetup, sale, workshop, etc.) |
+| `venue` | string | Human‑readable venue name |
+| `host` | string | Non‑identifying host label (e.g., “Community Garden Group”) |
 
-Note:
-
+**Note:**  
 Hosts MUST NOT include personal names or contact information.
 
-Lost & Found Metadata
+---
+
+## Real Estate Metadata
+
+These keys apply to real‑estate‑related intents (`RENTAL_AVAILABLE`, `RENTAL_WANTED`, `ROOM_AVAILABLE`, `SUBLET_AVAILABLE`, etc.).
+
+| Key | Type | Description |
+| --- | --- | --- |
+| `rent_price` | number | Monthly rent amount |
+| `rent_currency` | string | ISO‑4217 currency code |
+| `available_date` | string | ISO‑8601 availability date |
+| `bedrooms` | number | Number of bedrooms |
+| `bathrooms` | number | Number of bathrooms |
+| `sq_ft` | number | Approximate square footage |
+| `housing_type` | string | apartment, room, sublet, studio, etc. |
+| `pets_allowed` | string | yes/no/limited |
+| `furnished` | string | yes/no/partial |
+| `lease_terms` | string | Month‑to‑month, 12‑month, short‑term, etc. |
+| `notes` | string | Additional non‑identifying details |
+
+These keys are intentionally high‑level and MUST NOT include:
+
+- precise addresses  
+- GPS coordinates  
+- personal contact information  
+
+---
+
+## Lost & Found Metadata
 
 These keys apply to lost/found items, pets, and devices.
 
 | Key | Type | Description |
 | --- | --- | --- |
-| ``item_type`` | string | Type of item (wallet, keys, phone, etc.) |
-| ``color`` | string | Color description |
-| ``brand`` | string | Optional brand |
-| ``model`` | string | Optional model |
-| ``pet_type`` | string | Dog, cat, bird, etc. |
-| ``pet_breed`` | string | Optional breed |
-| ``notes`` | string | Additional non‑identifying details |
+| `item_type` | string | Type of item (wallet, keys, phone, etc.) |
+| `color` | string | Color description |
+| `brand` | string | Optional brand |
+| `model` | string | Optional model |
+| `pet_type` | string | Dog, cat, bird, etc. |
+| `pet_breed` | string | Optional breed |
+| `notes` | string | Additional non‑identifying details |
 
-Environmental Metadata
+---
+
+## Environmental Metadata
 
 These keys apply to hyperlocal environmental signals.
 
 | Key | Type | Description |
 | --- | --- | --- |
-| ``severity`` | string | low, medium, high |
-| ``source`` | string | Human‑readable source (e.g., “construction”, “traffic”) |
-| ``duration_estimate`` | string | Human‑readable estimate (“10 minutes”, “1 hour”) |
+| `severity` | string | low, medium, high |
+| `source` | string | Human‑readable source (e.g., “construction”, “traffic”) |
+| `duration_estimate` | string | Human‑readable estimate (“10 minutes”, “1 hour”) |
 
-Reserved Keys
+---
+
+## Reserved Keys
 
 | Range | Purpose |
 | --- | --- |
-| ``meta_*`` | Future standardized metadata keys |
-| ``vendor_*`` | Vendor‑specific metadata |
-| ``exp_*`` | Experimental metadata |
-| ``v2_*`` | Future HIBP versions |
+| `meta_*` | Future standardized metadata keys |
+| `vendor_*` | Vendor‑specific metadata |
+| `exp_*` | Experimental metadata |
+| `v2_*` | Future HIBP versions |
 
 Reserved keys MUST NOT be used without explicit assignment.
 
+---
 
-Requesting New Metadata Keys
+## Requesting New Metadata Keys
 
 To propose a new metadata key, submit an issue or pull request including:
 
-Proposed key name
-
-Data type
-
-Description and justification
-
-Example use cases
-
-Privacy considerations
+- Proposed key name  
+- Data type  
+- Description and justification  
+- Example use cases  
+- Privacy considerations  
 
 New keys MUST NOT conflict with existing assignments.
 
+---
 
-Version History
+## Version History
 
-HIBP‑v1 (Initial Release)
+### **HIBP‑v1 (Initial Release)**
+- Defined standard metadata keys  
+- Added commerce, community, real estate, lost/found, and environmental metadata  
+- Reserved future metadata ranges  
 
-Defined standard metadata keys
-
-Added commerce, community, lost/found, and environmental metadata
-
-Reserved future metadata ranges
+---
 
 End of document.
