@@ -57,7 +57,7 @@ Error codes MUST NOT be transmitted in core frames.
 
 ---
 
-## Broadcaster Errors (0x01–0x1F)
+## Broadcaster Errors (0x01-0x1F)
 
 Errors related to devices generating HIBP frames.
 
@@ -76,7 +76,7 @@ Reserved: `0x10–0x1F`
 
 ---
 
-## Receiver Errors (0x20–0x3F)
+## Receiver Errors (0x20-0x3F)
 
 Errors related to devices receiving or parsing HIBP frames.
 
@@ -95,7 +95,7 @@ Reserved: `0x30–0x3F`
 
 ---
 
-## Gateway Errors (0x40–0x5F)
+## Gateway Errors (0x40-0x5F)
 
 Errors related to gateways that normalize, relay, or forward HIBP frames.
 
@@ -114,7 +114,7 @@ Reserved: `0x50–0x5F`
 
 ---
 
-## Node Errors (0x60–0x7F)
+## Node Errors (0x60-0x7F)
 
 Errors related to Neighborhood Compute Nodes (NCNs).
 
@@ -132,7 +132,7 @@ Reserved: `0x70–0x7F`
 
 ---
 
-## Metadata & Payload Errors (0x80–0x9F)
+## Metadata & Payload Errors (0x80-0x9F)
 
 Errors related to extended payloads and metadata.
 
