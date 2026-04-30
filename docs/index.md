@@ -44,10 +44,11 @@ All registries are versioned and may expand without requiring a new protocol ver
 
 ## 🧭 Domain Overview
 
-HIBP‑v1 organizes intent codes into five primary domains:
+HIBP‑v1 organizes intent codes into **six primary domains**:
 
-- **Commerce (0x01–0x1F)** — buying, selling, trading, rentals  
-- **Community & Social (0x20–0x3F)** — events, alerts, help requests  
+- **Commerce (0x01–0x1F)** — buying, selling, trading, services  
+- **Community & Social (0x20–0x2F)** — events, alerts, help requests  
+- **Real Estate (0x30–0x3F)** — rentals, rooms, sublets  
 - **Lost & Found (0x40–0x4F)** — lost items, found items, lost pets  
 - **Environmental & Ambient (0x50–0x6F)** — noise, traffic, outages, weather  
 - **Infrastructure & System (0x70–0x7F)** — node beacons, status, capabilities  
