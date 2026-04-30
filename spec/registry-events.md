@@ -134,9 +134,9 @@ These metadata keys apply specifically to events.
 | `event_end` | string | ISO‑8601 end time |
 | `event_category` | string | Category ID from this registry |
 | `venue` | string | Human‑readable venue name |
-| `host` | string | Non‑identifying host label (e.g., “Community Garden Group”) |
+| `host` | string | Non‑identifying host label |
 | `cost` | string | Free, donation, or price description |
-| `age_range` | string | Optional age suitability (e.g., “all ages”) |
+| `age_range` | string | Optional age suitability |
 | `notes` | string | Additional non‑identifying details |
 
 **Important:**  
