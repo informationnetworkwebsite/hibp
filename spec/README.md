@@ -4,10 +4,11 @@
 
 The **Hyperlocal Intent Broadcast Protocol (HIBP)** is an open, lightweight communication standard for broadcasting short‑range, privacy‑preserving intent signals using Bluetooth Low Energy (BLE), Wi‑Fi LAN multicast, and other local transports.
 
-HIBP enables devices to share hyperlocal human‑intent metadata across five primary domains:
+HIBP enables devices to share hyperlocal human‑intent metadata across six primary domains:
 
 - **Commerce**  
 - **Community & Social**  
+- **Real Estate**  
 - **Lost & Found**  
 - **Environmental & Ambient**  
 - **Infrastructure & System**
@@ -23,6 +24,7 @@ The first public version of the protocol.
 
 - 21‑byte core message format  
 - Domain‑based Intent Code Registry  
+- Real Estate domain (new in v1)  
 - Device Type Registry  
 - Transport requirements (BLE, Wi‑Fi LAN)  
 - Security & privacy model  
