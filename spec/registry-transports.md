@@ -78,7 +78,7 @@ BLE is the **reference transport** for HIBP‑v1.
 
 ---
 
-### Wi‑Fi LAN Multicast
+### Wi-Fi LAN Multicast
 **Transport Class:** Broadcast (local network)  
 **Core Frames:** Yes  
 **Extended Payloads:** Yes  
